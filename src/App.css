@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  background-color: rgb(168, 198, 198);
+}
+.boton {
+  margin: 4px;
+  height: 50px;
+  -webkit-box-shadow: 9px 3px 21px -4px #000000;
+  box-shadow: 9px 3px 21px -4px #000000;
+}
+.container {
+  background-color: rgb(119, 167, 130);
+  -webkit-box-shadow: 9px 3px 21px -4px #000000;
+  box-shadow: 9px 3px 21px -4px #000000;
+}
+h2 {
+  color: rgb(9, 9, 9);
+  font-size: 1.9rem;
+}
+input {
+  -webkit-box-shadow: 9px 3px 21px -4px #000000;
+  box-shadow: 9px 3px 21px -4px #000000;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
