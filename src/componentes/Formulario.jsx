@@ -8,6 +8,7 @@ const Formulario = ({ setAlert }) => {
   const [confirmapass, setConfirmapass] = useState("");
   const validarPassword = password !== confirmapass;
   const [error, setError] = useState(false);
+  const [exito, setExito] = useState(false);
 
   const validarInput = (e) => {
     e.preventDefault();
@@ -23,6 +24,20 @@ const Formulario = ({ setAlert }) => {
       setAlert({
         error: true,
         msg: Swal.fire("Clave incorrecta"),
+        color: "danger",
+      });
+    }
+
+    if (
+      nombre !== "" &&
+      email !== "" &&
+      password !== "" &&
+      confirmapass !== "" &&
+      validarPassword === false
+    ) {
+      setExito({
+        exito: true,
+        msg: Swal.fire("Cuenta Creada"),
         color: "danger",
       });
     }
