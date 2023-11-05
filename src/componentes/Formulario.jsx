@@ -28,6 +28,20 @@ const Formulario = ({ setAlert }) => {
       });
     }
 
+    if (
+      nombre !== "" &&
+      email !== "" &&
+      password !== "" &&
+      confirmapass !== "" &&
+      validarPassword === false
+    ) {
+      setExito({
+        exito: true,
+        msg: Swal.fire("Cuenta Creada"),
+        color: "danger",
+      });
+    }
+
     setError(false);
     setNombre("");
     setEmail("");
