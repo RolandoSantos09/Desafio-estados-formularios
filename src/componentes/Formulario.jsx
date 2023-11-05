@@ -8,6 +8,7 @@ const Formulario = ({ setAlert }) => {
   const [confirmapass, setConfirmapass] = useState("");
   const validarPassword = password !== confirmapass;
   const [error, setError] = useState(false);
+
   const validarInput = (e) => {
     e.preventDefault();
     if (nombre === "" || email === "" || password === "" || confirmapass === "")
@@ -37,7 +38,6 @@ const Formulario = ({ setAlert }) => {
   return (
     <>
       <form onSubmit={validarInput}>
-        {/* {error ? <p>Debes ingresar tu nombre</p> : null} */}
         <div>
           <label>Nombre</label>
           <input
