@@ -2,4 +2,5 @@
 
 Desafio Formulario de registro en Desafio Latam
 Módulo React
-G47 Rolando Santos
+G46 Rolando Santos
+colaboración : Fabia´n Leiva 
