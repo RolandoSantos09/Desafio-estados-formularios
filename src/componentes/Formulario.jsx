@@ -8,6 +8,7 @@ const Formulario = ({ setAlert }) => {
   const [confirmapass, setConfirmapass] = useState("");
   const validarPassword = password !== confirmapass;
   const [error, setError] = useState(false);
+  const [exito, setExito] = useState(false);
 
   const validarInput = (e) => {
     e.preventDefault();
